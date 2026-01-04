@@ -35,58 +35,6 @@ A React-based mini e-commerce application demonstrating component design, state 
 - ✅ **Debounced Search**: Search input is debounced for better performance
 - ✅ **Product Details**: Product information displayed in cards
 
-## Technical Stack
-
-- **React 18** (Functional components only)
-- **CSS3** (No UI libraries)
-- **Fetch API** for data fetching
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-1. Navigate to the project directory:
-```bash
-cd C:\Users\surya\mini-ecommerce
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm start
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Project Structure
-
-```
-src/
-├── components/
-│   ├── ProductList.js       # Product grid container
-│   ├── ProductList.css
-│   ├── ProductCard.js       # Individual product card
-│   ├── ProductCard.css
-│   ├── Filters.js            # Search, filter, and sort controls
-│   ├── Filters.css
-│   ├── Cart.js              # Shopping cart component
-│   └── Cart.css
-├── utils/
-│   └── api.js               # API fetching utilities
-├── App.js                   # Main application component
-├── App.css
-├── index.js                 # Entry point
-└── index.css               # Global styles
-```
-
 ## Key Implementation Details
 
 ### State Management
@@ -95,7 +43,6 @@ src/
 - Product list uses `React.memo` to optimize rendering
 
 ### Performance Optimizations
-- Debounced search input (300ms delay)
 - Memoized filtered products list
 - Memoized cart totals
 - React.memo for product components
@@ -105,5 +52,8 @@ src/
 2. Filters applied via `useMemo` for filtered products
 3. Cart operations use `useCallback` to maintain referential equality
 4. localStorage syncs cart state automatically
+
+### How to run
+- npm start
 
 
