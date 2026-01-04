@@ -106,10 +106,4 @@ src/
 3. Cart operations use `useCallback` to maintain referential equality
 4. localStorage syncs cart state automatically
 
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
 
